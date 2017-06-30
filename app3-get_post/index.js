@@ -1,13 +1,13 @@
 var express = require('express');
 var bodyParser = require('body-parser');
 var port = 3000;
-
+var getItems = require('/controllers/mainCtrl')
 var app = express();
 app.use(bodyParser.json());
 
 
-
-
+app.get('/items', mainCtrl.getItems)
+app.post('/')
 
 
 app.listen(port, function() {
