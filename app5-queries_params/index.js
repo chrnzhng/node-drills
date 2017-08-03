@@ -7,6 +7,8 @@ var app = express();
 
 app.use(bodyParser.json());
 
+app.get('/api')
+
 
 
 
